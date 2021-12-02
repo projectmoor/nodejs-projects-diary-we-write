@@ -1,5 +1,5 @@
 //jshint esversion:6
-require('dotenv').config(); // load environment variables from .env file
+// require('dotenv').config(); // load environment variables from .env file
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -17,7 +17,7 @@ const findOrCreate = require('mongoose-findorcreate');
 const app = express();
 
 // const path = require('path');
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
   extended: true
