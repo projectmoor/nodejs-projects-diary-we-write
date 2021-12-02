@@ -1,0 +1,27 @@
+
+body {
+  background-color: #E8ECEF;
+  color: #87AAAA;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.sentence {
+  font-family: 'Ephesis', cursive;
+  font-size: 2rem;
+  text-align:left;
+  color: #F9F3DF;
+  background-color: #87AAAA;
+  padding-left: 15px;
+}
+
+.btn-lgreen {
+  background-color: #87AAAA;
+}
