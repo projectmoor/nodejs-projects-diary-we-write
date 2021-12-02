@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-feather-alt fa-6x"></i>
+    <h1 class="display-3">Diary We Write</h1>
+    <p class="secret-text">One sentence a day, submit here to share yours.</p>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="diary" autocomplete="off" placeholder="Today, I want to share...">
+      </div>
+      <a class="btn btn-light" href="/logout" role="button">Log Out</a>
+      <button type="submit" class="btn btn-lgreen">Submit</button>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>

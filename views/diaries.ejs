@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-feather-alt fa-6x"></i>
+    <h1 class="display-3">Diary We Write</h1>
+    <% usersWithdiaries.forEach(function(user){ %>
+    <%  user.diaries.forEach(diary => { %>
+    <%    if ( diary.date === submittedDate ) { %>
+          <p class="sentence"><%=diary.task%></p>
+    <%    } %>
+    <%  })   %>  
+    <% }) %>
+
+
+
+    <hr>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+    <a class="btn btn-lgreen btn-lg" href="/submit" role="button">Post New Sentence</a>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
